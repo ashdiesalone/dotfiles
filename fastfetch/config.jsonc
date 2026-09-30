@@ -1,0 +1,55 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+	"logo": {
+    "type": "auto",        // Logo type: auto, builtin, small, file, etc.
+    "source": "~/.config/fastfetch/Logo/ball.txt",
+    "width": 5,           // Width in characters
+    "height": 5,          // Height in characters
+	"color": {
+		"1": "white"
+	},
+	"padding": {
+		"top": 1
+	}
+},
+  "modules": [
+    "break",
+    "break",
+    "break",
+    {
+      "type": "title",
+      "key": "User",
+      "format": "{user-name}"
+    },
+    {
+      "type": "os",
+      "key": "OS",
+      "format": "{name}"
+    },
+    {
+      "type": "host",
+      "key": "Host"
+    },
+    {
+      "type": "wm",
+      "key": "WM"
+    },
+    {
+      "type": "shell",
+      "key": "Shell"
+    },
+    {
+      "type": "font",
+      "key": "Font"
+    },
+    {
+      "type": "cpu",
+      "key": "Cpu"
+    },
+	"break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}

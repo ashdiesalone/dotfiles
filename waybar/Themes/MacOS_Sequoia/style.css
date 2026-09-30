@@ -1,0 +1,65 @@
+* {
+    all: unset;
+    font-family: "DM Sans", "Noto Sans CJK JP", "Noto Sans CJK KR";
+    color: #000;
+    padding: 0 5px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background-color: rgba(255,255,255,0.5);
+}
+
+tooltip {
+    background-color: rgba(255,255,255,0.5);
+    padding: 4px 12px;
+    border-radius: 50;
+}
+
+tooltip box {
+    padding: 4px 12px;
+}
+
+#workspaces {
+    padding: 4px 0;
+    color: #282828;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    min-width: 8px;
+    background: transparent;
+    color: #888888;
+}
+
+#workspaces button.active {
+    min-width: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50;
+    transition: 0.3s;
+}
+
+#clock,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio{
+    margin: 2px;
+    padding: 0 5px;
+    color: #000000;
+}
+
+#battery.charging {
+    min-width: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50;
+    transition: 0.3s;
+}
+
+menu {
+    background-color: rgba(255,255,255,0.75);
+    padding: 4px 12px;
+    margin: 5px;
+    border-radius: 10;
+}

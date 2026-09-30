@@ -1,0 +1,14 @@
+width=300
+height=200
+location=center
+show=drun
+prompt= Search | 검색 | Поиск
+filter_rate=100
+allow_markup=false
+no_actions=true
+halign=fill
+orientation=vertical
+insensitive=true
+allow_images=false
+term=kitty
+gtk_dark=true

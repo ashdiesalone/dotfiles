@@ -1,0 +1,45 @@
+/* colors-black: #282828;
+colors-white: rgba(241, 251, 199, 0.75); */
+
+* {
+    all: unset;
+    font-family: "Rubik", "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
+    /* color: rgb(241, 251, 199); */
+    letter-spacing: -0.5px;
+}
+
+tooltip {
+    background-color: #282828;
+    padding: 6px 12px;
+    border-radius: 50;
+}
+
+tooltip box {
+    padding: 6px 12px;
+}
+
+#clock {
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    background-color: #282828;
+    color: #d4d4d4;
+}
+
+.modules-center {
+    padding: 6px 12px;
+    border-radius: 50;
+    background-color: #282828;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#workspaces button.active {
+    min-width: 1.5rem;
+}
+
+#language {
+    font-weight: 500;
+}

@@ -1,0 +1,115 @@
+* {
+    all: unset;
+    font-family: "Px Plus IBM VGA8", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+window#waybar {
+    background-color: #1e23fa;
+    color: #50c3fa;
+    border-top: 0px solid #d4d4d4;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 0;
+}
+
+tooltip {
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    border: 1px solid #3a3a3a;
+    padding: 4px 8px;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    padding: 0px 0px;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    color: #50c3fa;
+    background: transparent;
+    border-radius: 0;
+}
+
+#workspaces button.active {
+    color: #000000;
+    background-color: #50c3fa;
+}
+
+#workspaces button.empty {
+    color: #818181;
+}
+
+#workspaces button:hover {
+    background-color: #50c3fa;
+    color: #f0f528;
+}
+
+/* --- Módulos generales --- */
+#clock,
+#mpris,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#language {
+    padding: 0 10px;
+    color: #50c3fa;
+    background: transparent;
+}
+
+/* --- Estados --- */
+
+#network.disconnected {
+	color: #818181;
+    background-color: transparent;
+}
+
+#network.wifi {
+	color: #000000;
+	background-color: #50c3fa;
+}
+
+#mpris.playing {
+    color: #000000;
+    background-color: #50c3fa;
+}
+
+#mpris.stopped {
+    color: #50c3fa;
+}
+
+#bluetooth.disabled {
+    color: #818181;
+}
+
+#bluetooth.connected {
+    background-color: #50c3fa;
+    color: #000000;
+}
+
+#pulseaudio.muted {
+    color: #818181;
+}
+
+#battery.warning {
+    background-color: transparent;
+    color: #f0f528;
+}
+
+#battery.critical {
+    background-color: #f0f528;
+    color: #000000;
+}
+
+#battery.charging {
+    background-color: #50c3fa;
+    color: #000000;
+}
+

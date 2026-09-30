@@ -1,0 +1,17 @@
+width=450
+height=250
+location=center
+show=drun
+prompt=owoo!! search!!!
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+insensitive=true
+allow_images=false
+term=kitty
+gtk_dark=true
+hide_scroll=true
+layer=overlay
+dynamic_lines=true

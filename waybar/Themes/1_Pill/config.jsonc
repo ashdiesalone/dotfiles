@@ -1,0 +1,85 @@
+{
+    "layer": "bottom",
+    "spacing": 10,
+    "margin-top": 10,
+    // "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/workspaces", "clock", "network", "bluetooth", "pulseaudio","hyprland/language","backlight", "battery"],
+    // "modules-right": ["network", "bluetooth", "pulseaudio","battery"],
+    "hyprland/workspaces": {
+	    "format": "{icon}",
+	    "format-icons": {
+	        "default": "",
+            "active": "󰝤",
+            "empty": "",
+            "focused": ""
+	    },
+            "persistent-workspaces": {
+                 "eDP-1": [1,2,3,4,5]
+            }
+    },
+    "clock": {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "tooltip": true,
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "{:%d %b %Y}",
+        "locale": "es_AR.UTF-8"
+    },
+    "network": {
+        "interface": "wlo2",
+        "format": "{ifname}",
+        "format-wifi": "󰤨",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "󰤭", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰤨",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor",
+        "max-length": 50,
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ]
+    },
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "on-click": "blueman-manager",
+        "tooltip-format-connected": "{controller_alias} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "tooltip-format-disabled": "Disabled"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "󰸈",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+    "hyprland/language":{
+        "format-en": "en",
+        "format-es": "es"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["󰃞","󰃟", "󰃠"]
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    }
+}

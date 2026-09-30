@@ -1,0 +1,151 @@
+* {
+    all: unset;
+    font-family: "Rubik", "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
+    /* color: rgb(241, 251, 199); */
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+
+.modules-left {
+    margin: 0 10px;
+}
+
+.modules-right {
+    margin: 0 10px;
+}
+
+tooltip {
+    background-color: #282828;
+    padding: 4px 12px;
+    border-radius: 50;
+}
+
+tooltip box {
+    padding: 4px 12px;
+}
+
+#clock {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #A8CCE0;
+}
+
+#workspaces {
+    border-radius: 50;
+    background-color: #282828;
+}
+
+#workspaces button {
+    border-radius: 50;
+    padding: 0 12px;
+    color: #A8CCE0;
+}
+
+#workspaces button.active {
+    background-color: #A8CCE0;
+    color: #282828;
+    transition: 0.3s;
+}
+
+#workspaces button.empty {
+    /* background-color: #6b7572;
+    color: #282828; */
+    background-color: #282828;
+    color: #6b7572;
+}
+
+#mpris {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #A8CCE0;
+    transition: 0.5s;
+}
+
+#mpris.playing {
+    background-color: #A8CCE0;
+    color: #282828;
+}
+#mpris.stopped {
+    background-color: #282828;
+    color: #6b7572;
+}
+
+#network {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #9B86CC;
+    transition: 0.5s;
+}
+
+#network.disabled {
+    background-color: #282828;
+    color: #6b7572;
+}
+
+#network.wifi {
+    background-color: #9B86CC;
+    color: #282828;
+}
+
+#bluetooth {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #D87AAF;
+    transition: 0.5s;
+}
+
+#bluetooth.disabled {
+    color: #6b7572;
+    transition: 0.5s;
+}
+
+#bluetooth.connected {
+    background-color: #D87AAF;
+    color:#282828;
+    transition: 0.5s;
+}
+
+#pulseaudio {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #D8CCA0;
+    color: #282828;
+    transition: 0.5s;
+}
+
+#pulseaudio.muted {
+    background-color: #282828;
+    color: #D8CCA0;
+}
+
+#battery {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #72B98A;
+    transition: 0.5s;
+}
+
+#battery.warning {
+    color: #D8CCA0;
+}
+
+#battery.critical {
+    color: #F2474A;
+}
+
+#battery.charging {
+    background-color: #72B98A;
+    color: #282828;
+}
+
+#language {
+    padding: 4px 12px;
+    border-radius: 50;
+    background-color: #282828;
+    color: #d4dbd9;
+}

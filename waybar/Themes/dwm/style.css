@@ -1,0 +1,127 @@
+* {
+    all: unset;
+    font-family: "Maple Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+window#waybar {
+    background-color: rgba(25, 25, 25, 0.75);
+    color: #d4d4d4;
+    /* border-bottom: 1px solid #3a3a3a; */
+}
+
+.modules-right > widget > * {
+    border-left: 1px solid #3a3a3a;
+}
+
+.modules-left > widget > * {
+    border-right: 1px solid #3a3a3a;
+}
+
+.modules-left {
+    margin: 0;
+}
+
+.modules-right {
+    margin: 0;
+}
+
+tooltip {
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    border: 1px solid #3a3a3a;
+    padding: 4px 8px;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #d4d4d4;
+    background: transparent;
+    border-radius: 0;
+}
+
+#workspaces button.active {
+    color: #282828;
+    background-color: #d4dbd9;
+}
+
+#workspaces button.empty {
+    color: #6b7572;
+}
+
+#workspaces button:hover {
+    background-color: #2a2a2a;
+    color: #d4d4d4;
+}
+
+/* --- Módulos generales --- */
+#clock,
+#mpris,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#language {
+    padding: 0 10px;
+    color: #d4d4d4;
+    background: transparent;
+}
+
+/* --- Estados --- */
+#mpris.playing {
+    color: #282828;
+    background-color: #d4dbd9;
+}
+
+#mpris.stopped {
+    color: #6b7572;
+}
+
+#network.disabled,
+#network.disconnected {
+    color: #6b7572;
+}
+
+#bluetooth.disabled {
+    color: #6b7572;
+}
+
+#pulseaudio.muted {
+    color: #6b7572;
+}
+
+#battery.warning {
+    color: #D8CCA0;
+}
+
+#battery.critical {
+    color: #F2474A;
+}
+
+#battery.charging {
+    color: #282828;
+    background-color: #d4dbd9;
+}
+
+#custom-arch {
+    padding: 0 10px;
+}
+
+#custom-tlp {
+    padding: 0 10px;
+}
+
+#custom-tlp.ac {
+    color: #d4dbd9;   /* o tu color de acento */
+}
+
+#custom-tlp.bat {
+    color: #d4dbd9;
+}

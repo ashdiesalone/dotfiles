@@ -1,0 +1,78 @@
+* {
+    all: unset;
+    font-family: "Px Plus IBM VGA8", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+window {
+    background-color: #1e23fa;
+    color: #50c3fa;
+    border: 1px solid #50c3fa;
+    border-radius: 0;
+}
+
+#input {
+    background-color: transparent;
+    color: #50c3fa;
+    border: none;
+    border-bottom: 1px solid #50c3fa;
+    padding: 6px 10px;
+    margin: 0;
+    border-radius: 0;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: none;
+    color: #f0f528;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+#outer-box {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+#entry {
+    padding: 4px 10px;
+    color: #50c3fa;
+    background: transparent;
+    border-bottom: 1px solid rgba(80, 195, 250, 0.3);
+    border-radius: 0;
+}
+
+#entry:last-child {
+    border-bottom: none;
+}
+
+#entry:hover,
+#entry:selected {
+    color: #000000;
+    background-color: #50c3fa;
+}
+
+#entry:selected #text {
+    color: #000000;
+}
+
+#text {
+    color: inherit;
+}
+
+#img {
+    -gtk-icon-effect: none;
+}

@@ -1,0 +1,70 @@
+* {
+    font-family: "Cascadia Code";
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    border-radius: 0;
+}
+
+window {
+    background-color: rgba(58, 58, 58, 0.8);
+    border: 2px solid #d4d4d4;
+}
+
+#input {
+    background-color: transparent;
+    color: #b8b8b8;
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    padding: 12;
+    margin: 25 25 0 25;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: none;
+    color: #1a1a1a;
+    background-color: #c0c0c0;
+}
+
+#scroll {
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box {
+    margin: 0;
+    padding: 25;
+    background: transparent;
+}
+
+#outer-box {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+#entry {
+    padding: 5px 12px;
+    color: #d4d4d4;
+    background: transparent;
+    border-bottom: 0px solid #383838;
+}
+
+#entry:last-child {
+    border-bottom: none;
+}
+
+#entry:hover,
+#entry:selected {
+    color: #1a1a1a;
+    background-color: #b8b8b8;
+}
+
+#entry:selected #text {
+    color: #1a1a1a;
+}
+
+#text {
+    color: inherit;
+}
